@@ -1,0 +1,15 @@
+
+
+##### 工程目录
+/var/www/hello-service
+
+##### git拉取代码
+git clone git@github.com:xjcbruce/hello-service.git
+
+##### maven打包和检查
+mvn package -DskipTests
+ls -l target/*.jar
+
+##### 生产环境运行
+java -jar target/hello-service-0.0.1-SNAPSHOT.jar --spring.profiles.active=prod
+
